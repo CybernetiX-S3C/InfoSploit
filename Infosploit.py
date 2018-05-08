@@ -220,7 +220,7 @@ def  select():
       slowprint("YouTube: https://www.youtube.com/channel/UCAOxHOEpTxpwpmrwy5edWHg?view_as=subscriber")
       slowprint("......................")
       slowprint("Facebook: https://www.facebook.com/John-Poli-Modica-1883748118365007/")
-      slowprint('......................")
+      slowprint("......................")
       ext()
     elif  CybernetiX == 00:
       print "Good-bye!!"
