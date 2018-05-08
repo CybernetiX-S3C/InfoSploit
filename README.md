@@ -1,4 +1,4 @@
-## ★ Infoploit . version 1.0 | 
+## ★ InfoSploit . version 1.0 | 
 
    Author: John Modica @ CybernetiX S3C
 ## ★ Description:
