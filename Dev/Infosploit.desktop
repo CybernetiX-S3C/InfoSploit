@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Infosploit
+Comment=Infosploit 🕵️ Information Gathering Tool 🕵️
+Encoding=UTF-8
+Exec=sh -c "Infosploit;${SHELL:-bash}"
+Icon=Infosploit.png
+StartupNotify=false
+Terminal=true
+Type=Application
+Categories=01-info-gathering;01-04-network-scanners;02-vulnerability-analysis;
+X-Kali-Package=Infosploit
+Name[C]=Infosploit
+Name[en_US]=Infosploit.desktop

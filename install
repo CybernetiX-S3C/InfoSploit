@@ -1,0 +1,53 @@
+#!/bin/bash
+#
+#
+# author : John Modica @ CybernetiX S3C 
+# Tested on Kali Linux / Parrot Os / Ubuntu/ Arco Linux / Archman 
+# Simple script for Install InfoSploit
+#Colors
+cyan='\e[0;36m'
+green='\e[0;32m'
+lightgreen='\e[1;32m'
+white='\e[1;37m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+blue='\e[1;34m'
+#Options
+path=`pwd` # Path
+VeR="V1.0" # Version
+#Check root exist
+[[ `id -u` -eq 0 ]] > /dev/null 2>&1 || { echo  $red "You must be root to run the script"; exit 1; }
+echo -e $cyan ""
+echo -e "    "
+echo -e "    ____      ____     _____       __      _ __ "
+echo -e "   /  _/___  / __/___ / ___/____  / /___  (_) /_"
+echo -e "   / // __ \/ /_/ __ \\__ \/ __ \/ / __ \/ / __/"
+echo -e " _/ // / / / __/ /_/ /__/ / /_/ / / /_/ / / /_  "
+echo -e "/___/_/ /_/_/  \____/____/ .___/_/\____/_/\__/  "
+echo -e "                       /_/ V1.0"
+echo -e $white "------------------------------"
+echo -e $red   "[ ✔ ] Installing The Tool [ ✔ ] " 
+echo -e $white "------------------------------"
+echo -e $green "[ ! ] Moving InfoSploit folder "
+mkdir /usr/share/Infosploit
+cp -r Dev /usr/share/Infosploit
+cp install /usr/share/Infosploit
+cp update.py /usr/share/Infosploit
+cp -r modules /usr/share/Infosploit
+cp Infosploit.py /usr/share/Infosploit
+echo -e $blue "[ ✔ ]Done"
+echo -e $red "[*] Creating Icons Directory"
+cp -r $path/Dev/Infosploit.desktop /usr/share/applications/Infosploit.desktop
+cp -r $path/Dev/Infosploit.png /usr/share/icons/Infosploit.png
+echo -e $yellow "[*] Creating shortcut command $red Infosploit"
+echo "#!/bin/sh" >> /usr/bin/Infosploit
+echo "cd /usr/share/Infosploit" >> /usr/bin/Infosploit
+echo "exec python2 Infosploit.py \"\$@\"" >> /usr/bin/Infosploit
+chmod +x /usr/bin/Infosploit
+echo -e $white "---------------------------------------------------------------------------------------"
+echo -e $red "[ ✔ ] InfoSploit Is Installed In The Application Menu Under (Information Gathering) [ ✔ ]"
+echo -e $white "---------------------------------------------------------------------------------------"
+echo -e $green "╔────────────────────────────╗ "
+echo -e $blue "|Type <(Infosploit)> To Run  | "
+echo -e $green "╚────────────────────────────╝ "
+exit
