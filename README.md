@@ -1,20 +1,21 @@
-## ★ InfoSploit . version 1.0 | 
+### [Main Page](https://CybernetiX-S3C.GitHub.io)
+
+# ★ InfoSploit . version 1.0 | 
 
    Author: John Modica @ CybernetiX S3C
 ## ★ Description:
 
 InfoSploit is a simple python script to Information Gathering 
 
+```markdown
 ## ★ Download:
 
 ● git clone https://github.com/CybernetiX-S3C/InfoSploit
 
-## ★ How to use:
+# ★ How to use:
 
 cd InfoSploit
-
 chmod +x install
-
 ./install
 
 Run in Terminal 
@@ -22,32 +23,34 @@ Run in Terminal
 Infosploit
 
 (To run in Android you do not install file Run direct python2 Infosploit)
-
-# InfoSploit
-
+```
 ## ★ Properties :
 
-● DNS Lookup 
-● Whois Lookup
-● GeoIP Lookup
-● Subnet Lookup
-● Port Scanner
-● Extract Links 
-● Zone Transfer
-● HTTP Header
-● Host Finder
-● Robots.txt
-● IP-Locator
-● Traceroute
-● Host DNS Finder
-● Revrse IP Lookup
-● Collection Email
-● Subdomain Finder 
-● Install & Update
-● About Me 
-● Exit
+    DNS Lookup 
+    Whois Lookup
+    GeoIP Lookup
+    Subnet Lookup
+    Port Scanner
+    Extract Links 
+    Zone Transfer
+    HTTP Header
+    Host Finder
+    Robots.txt
+    IP-Locator
+    Traceroute
+    Host DNS Finder
+    Revrse IP Lookup
+    Collection Email
+    Subdomain Finder 
+    Install & Update
+    About Me 
+    Exit
 
 
+
+## ★ Tutorial
+
+* [Script Kiddie WPS Cracker](https://youtu.be/newiXU4de_M)
 ## ★ Video tutorial:
 
 [![ InfoSploit - Information Gathering Tool (Version 1.0) 
@@ -63,4 +66,3 @@ Infosploit
 
 # InfoSploit
 
-Tutorial    : https://www.youtube.com/watch?v=-6aV9LLF8NQ&t=9s
