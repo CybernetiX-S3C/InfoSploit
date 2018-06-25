@@ -47,13 +47,9 @@ Infosploit
     Exit
 
 
-
-## ★ Tutorial
-
-* [Script Kiddie WPS Cracker](https://youtu.be/newiXU4de_M)
 ## ★ Video tutorial:
+[Infosploit](https://www.youtube.com/watch?v=-6aV9LLF8NQ&t=9s)
 
-[![ InfoSploit - Information Gathering Tool (Version 1.0) 
 
 ## ★ About:
 ● GitHub    : https://github.com/CybernetiX-S3C/InfoSploit 
@@ -65,4 +61,5 @@ Infosploit
 ● Tested On : Windows / Linux / Android Phone (Termux No root)
 
 # InfoSploit
+
 
