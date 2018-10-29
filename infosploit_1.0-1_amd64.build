@@ -1,0 +1,283 @@
+ dpkg-buildpackage -rfakeroot -us -uc -ui
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: info: source package infosploit
+dpkg-buildpackage: info: source version 1.0-1
+dpkg-buildpackage: info: source distribution stable
+dpkg-buildpackage: info: source changed by John Modica <xx.cybernetix.xx@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ fakeroot debian/rules clean
+dh clean --with python2 --system=pybuild
+   dh_auto_clean -O--system=pybuild
+   dh_autoreconf_clean -O--system=pybuild
+   dh_clean -O--system=pybuild
+ dpkg-source -b .
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building infosploit using existing ./infosploit_1.0.orig.tar.gz
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/README.md, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/update.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/LICENSE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/install, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Dev
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Dev/Infosploit.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Dev/Infosploit.desktop, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/modules
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/theHarvester.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/myparser.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/sub.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/goofile.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/modules/tests
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/tests/myparser_test.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/modules/discovery
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/twittersearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/googleCSE.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/netcraft.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/shodansearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/jigsaw.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/googlesets.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/yandexsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/dogpilesearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/pgpsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/dogpilesearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/__init__.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/dnssearch-threads.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/virustotal.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/crtsh.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/pgpsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/baidusearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/googlesearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/bingsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/googleplussearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/baidusearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/dnssearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/yahoosearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/jigsaw.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/IPy.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/linkedinsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/exaleadsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/bingsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/yandexsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/yahoosearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/googleplussearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/netcraft.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/googleCSE.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/dnssearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/googlesets.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/linkedinsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/virustotal.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/exaleadsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/shodansearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/googlesearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/twittersearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/asksearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/crtsh.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/IPy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/modules/discovery/shodan
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/shodan/api.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/shodan/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/shodan/api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/shodan/__init__.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/shodan/wps.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/modules/discovery/DNS
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Status.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Class.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Base.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Status.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Type.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/__init__.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Class.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/lazy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Lib.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/lazy.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Opcode.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Opcode.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Type.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/Lib.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/discovery/DNS/win32dns.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/modules/lib
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/markup.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/__init__.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/htmlExport.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/graphs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/hostchecker.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/htmlExport.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/graphs.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/markup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/modules/lib/hostchecker.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/snap
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/snap/snapcraft.yaml, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/usr
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/usr/share
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/usr/share/applications
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/usr/share/applications/Infosploit.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/usr/share/applications/Infosploit.desktop, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Infosploit
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/README.md, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/update.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/LICENSE, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/Infosploit.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/install, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Infosploit/Dev
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/Dev/Infosploit.png, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/Dev/Infosploit.desktop, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Infosploit/modules
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/theHarvester.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/myparser.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/sub.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/goofile.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Infosploit/modules/tests
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/tests/myparser_test.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Infosploit/modules/discovery
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/twittersearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/googleCSE.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/netcraft.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/shodansearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/jigsaw.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/googlesets.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/yandexsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/dogpilesearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/pgpsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/dogpilesearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/__init__.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/dnssearch-threads.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/virustotal.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/crtsh.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/pgpsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/baidusearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/googlesearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/bingsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/googleplussearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/baidusearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/dnssearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/yahoosearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/jigsaw.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/IPy.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/linkedinsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/exaleadsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/bingsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/yandexsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/yahoosearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/googleplussearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/netcraft.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/googleCSE.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/dnssearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/googlesets.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/linkedinsearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/virustotal.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/exaleadsearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/shodansearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/googlesearch.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/twittersearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/asksearch.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/crtsh.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/IPy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Infosploit/modules/discovery/shodan
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/shodan/api.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/shodan/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/shodan/api.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/shodan/__init__.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/shodan/wps.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Infosploit/modules/discovery/DNS
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Status.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Class.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Base.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Status.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Type.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/__init__.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Class.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Base.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/lazy.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Lib.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/lazy.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Opcode.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Opcode.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Type.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/Lib.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/discovery/DNS/win32dns.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Infosploit/modules/lib
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/markup.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/__init__.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/__init__.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/htmlExport.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/graphs.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/hostchecker.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/htmlExport.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/graphs.pyc, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/markup.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/modules/lib/hostchecker.py, use --include-removal to override
+dpkg-source: warning: ignoring deletion of directory infosploit_1.0/Infosploit/snap
+dpkg-source: warning: ignoring deletion of file infosploit_1.0/Infosploit/snap/snapcraft.yaml, use --include-removal to override
+dpkg-source: info: building infosploit in infosploit_1.0-1.debian.tar.xz
+dpkg-source: info: building infosploit in infosploit_1.0-1.dsc
+ debian/rules build
+dh build --with python2 --system=pybuild
+   dh_update_autotools_config -O--system=pybuild
+   dh_autoreconf -O--system=pybuild
+   dh_auto_configure -O--system=pybuild
+   dh_auto_build -O--system=pybuild
+   dh_auto_test -O--system=pybuild
+   create-stamp debian/debhelper-build-stamp
+ fakeroot debian/rules binary
+dh binary --with python2 --system=pybuild
+   dh_testroot -O--system=pybuild
+   dh_prep -O--system=pybuild
+   dh_installdirs -O--system=pybuild
+   dh_auto_install -O--system=pybuild
+   dh_install -O--system=pybuild
+   dh_installdocs -O--system=pybuild
+   dh_installchangelogs -O--system=pybuild
+   dh_installexamples -O--system=pybuild
+   dh_installman -O--system=pybuild
+   dh_installcatalogs -O--system=pybuild
+   dh_installcron -O--system=pybuild
+   dh_installdebconf -O--system=pybuild
+   dh_installemacsen -O--system=pybuild
+   dh_installifupdown -O--system=pybuild
+   dh_installinfo -O--system=pybuild
+   dh_systemd_enable -O--system=pybuild
+   dh_python2 -O--system=pybuild
+E: dh_python2 dh_python2:408: no package to act on (python-foo or one with ${python:Depends} in Depends)
+   dh_installinit -O--system=pybuild
+   dh_systemd_start -O--system=pybuild
+   dh_installmenu -O--system=pybuild
+   dh_installmime -O--system=pybuild
+   dh_installmodules -O--system=pybuild
+   dh_installlogcheck -O--system=pybuild
+   dh_installlogrotate -O--system=pybuild
+   dh_installpam -O--system=pybuild
+   dh_installppp -O--system=pybuild
+   dh_installudev -O--system=pybuild
+   dh_installgsettings -O--system=pybuild
+   dh_bugfiles -O--system=pybuild
+   dh_ucf -O--system=pybuild
+   dh_lintian -O--system=pybuild
+   dh_gconf -O--system=pybuild
+   dh_icons -O--system=pybuild
+   dh_perl -O--system=pybuild
+   dh_usrlocal -O--system=pybuild
+   dh_link -O--system=pybuild
+   dh_installwm -O--system=pybuild
+   dh_installxfonts -O--system=pybuild
+   dh_strip_nondeterminism -O--system=pybuild
+   dh_compress -O--system=pybuild
+   dh_fixperms -O--system=pybuild
+   dh_missing -O--system=pybuild
+   dh_strip -O--system=pybuild
+   dh_makeshlibs -O--system=pybuild
+   dh_shlibdeps -O--system=pybuild
+   dh_installdeb -O--system=pybuild
+   dh_gencontrol -O--system=pybuild
+   dh_md5sums -O--system=pybuild
+   dh_builddeb -O--system=pybuild
+dpkg-deb: building package 'infosploit' in '../infosploit_1.0-1_amd64.deb'.
+ dpkg-genbuildinfo
+dpkg-genbuildinfo: error: badly formed line in files list file, line 1
+dpkg-buildpackage: error: dpkg-genbuildinfo subprocess returned exit status 25
